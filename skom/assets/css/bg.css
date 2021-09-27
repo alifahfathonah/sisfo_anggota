@@ -1,0 +1,10 @@
+.bg-dark-blue {
+	background-color: rgb(32, 58, 66);
+}
+
+.bg-image {
+	background-image: url(../img/bgimage.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}

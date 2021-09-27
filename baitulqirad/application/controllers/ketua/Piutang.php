@@ -1,0 +1,42 @@
+<?php 
+
+class Piutang extends CI_Controller{
+
+ 		public function __construct(){
+		parent::__construct();
+
+		if($this->session->userdata('hak_akses') !='1'){
+		   $this->session->set_flashdata('pesan','<div class="alert alert-danger 
+		    	alert-dismissible fade show" role="alert"> 
+						Anda belum login! <button type="button" class="close"
+						data-dismiss="alert" aria-label="close"
+						<span aria-hidden="true">&times;</span>
+						</button>
+						</div>');
+				redirect('login');
+	}
+}
+
+	public function index()
+	{	
+    	$data['title']   = "Daftar Piutang";
+		$data['piutang'] = $this->db->query("SELECT * FROM jurnalbq WHERE jurnalbq.akun='piutang'")->result();
+		$this->load->view('temp_ketua/header', $data);
+		$this->load->view('temp_ketua/sidebar');
+		$this->load->view('ketua/piutang', $data);
+		$this->load->view('temp_ketua/footer');
+	}
+
+	// 	public function tampilData()
+	// {	
+ //    	$data['title']   = "Daftar Piutang";
+	// 	$data['piutang'] = $this->db->query("SELECT * FROM data_piutangbq")->result();
+	// 	$this->load->view('temp_ketua/header', $data);
+	// 	$this->load->view('temp_ketua/sidebar');
+	// 	$this->load->view('ketua/tampilPiutang', $data);
+	// 	$this->load->view('temp_ketua/footer');
+	// }
+
+}
+
+ ?>

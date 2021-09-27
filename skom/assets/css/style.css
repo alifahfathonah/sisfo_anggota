@@ -1,0 +1,65 @@
+.text {
+	font-size: 13px;
+	font-family: "Times New Roman", Times, serif;
+	padding: 1px;
+	margin: 1px;
+	text-indent: 5px;
+}
+
+.tableku {
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin-left: 10;
+	width: 80%;
+}
+
+.satable {
+	border: 1px solid black;
+	border-collapse: collapse;
+	width: 100%;
+	text-align: left;
+}
+
+.mytable {
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin-left: 10;
+	width: 90%;
+}
+
+td,
+th {
+	border: 1px solid black;
+	height: 25px;
+	line-height: 20px;
+}
+
+thead {
+	text-align: center;
+	font-size: 14px;
+}
+
+.text-center {
+	font-size: 18px;
+	font-family: "Times New Roman", Times, serif;
+	text-align: center;
+	line-height: 5px;
+}
+
+.text-center-h5 {
+	font-size: 16px;
+	font-family: "Times New Roman", Times, serif;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.subhead {
+	font-size: 16px;
+	font-family: "Times New Roman", Times, serif;
+	text-align: left;
+	margin-bottom: 5px;
+}
+
+.t1 {
+	text-align: center;
+}

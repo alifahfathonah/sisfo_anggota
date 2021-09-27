@@ -1,0 +1,54 @@
+
+			<div class="card-deck">
+				<?php $no = 1;
+				foreach ($info_kom as $i) : ?>
+					<div class="card-body">
+						<div class="row">
+							<div class="card" style="width: 150px;">
+								<div class="card-header font-weight-bold bg-info text-white"></div>
+								<div class="row no-gutters">
+									<div class="col-md-12">
+										<div class="card-body">
+											<center>
+												<img src="<?= base_url() . 'assets/photo/' . $i->photo ?>" class="img-fluid" alt="" data-aos="zoom-in" style="width: 600px;">
+											</center>
+											<hr>
+											<h5 class="card-title"><b><?= $i->judul ?></b></h5>
+											<p class="card-text"><?= $i->desc_kom ?></p> 	
+										</div>
+											<div class="card-footer">
+												<small class="text-muted"><?= $i->created ?></small>
+											</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+				<?php endforeach; ?>
+			</div>
+
+			<div class="row">
+
+				<!--berita akan ditampilkan disini menggunakan card bootstrap-->
+				<?php foreach ($info_kom as $i) : ?>
+
+					<div class="col-md-4">
+						<br>
+						<div class="card">
+							<img src="<?= base_url() . 'assets/photo/' . $i->photo ?>" height="200px" class="card-img-top" alt="" data-aos="zoom-in">
+							<div class="card-body">
+								<h5 class="card-title"><b><?= $i->judul ?></b></h5>
+
+								<p class="card-text"><?= $i->desc_kom ?></p>
+
+							</div>
+							<div class="card-footer">
+								<small class="text-muted"><?= $i->created ?></small>
+							</div>
+						</div>
+
+					</div>
+				<?php endforeach; ?>
+
+			</div>

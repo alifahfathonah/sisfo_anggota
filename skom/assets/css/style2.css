@@ -1,0 +1,9 @@
+.t1 {
+	position: relative;
+	display: inline-block;
+	padding: 2px 2px 2px 10px;
+	color: #ffc107;
+	cursor: pointer;
+	letter-spacing: 2px;
+	text-align: center;
+}

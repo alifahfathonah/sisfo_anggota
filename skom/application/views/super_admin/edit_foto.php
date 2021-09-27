@@ -1,0 +1,45 @@
+</aside>
+<div class="content-wrapper">
+    <div class="content-header" style="margin-top: -9px;">
+        <div class="row" style="margin-bottom: -10px;">
+            <div class="col-sm-5">
+                <h4 class="text-lightgray text-bold ml-2">Ganti Foto Profile</h4>
+            </div>
+        </div>
+    </div>
+
+    <section class="content ">
+        <div class="row ml-1">
+            <div class="card text-white ml-2" style="max-width: 18rem; border: 2px solid;">
+                <div class="card-body mx-auto">
+                    <img class="card-img" src="<?php echo base_url(); ?>assets/img/<?php echo $user['foto']; ?>">
+                </div>
+            </div>
+            <div class="card ml-1" style="width:31%; height: 150px;">
+                <div class="card-body">
+                    <?php echo form_open_multipart('Super_Admin/update_aksi_foto'); ?>
+                    <!-- <form method="POST" action="<?php echo base_url() . 'Super_Admin/update_aksi_profile'; ?>"
+                    enctype="multipart/form-data"> -->
+
+
+                    <div class="form-group">
+                        <input type="hidden" id="id_user" name="id_user" class="form-control"
+                            value="<?= $user['id_user']; ?>">
+                        <input type="file" name="foto" id="foto" class="form-control">
+                    </div>
+                    <div class="card-footer" style="width: 100%;">
+                        <button type="submit" class="btn btn-success">Simpan</button>
+                        <a class="btn btn-danger" href="<?php echo base_url('super_admin/profile') ?>">Kembali</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- </form> -->
+            <?php echo form_close(); ?>
+        </div>
+</div>
+
+<br><br><br>
+</section>
+</div>

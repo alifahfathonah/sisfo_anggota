@@ -1,0 +1,22 @@
+.logo {
+    width: 250px;
+    height: 290px;
+    background-color: rgb(110, 185, 110);
+    border: solid 1px #cccccc;
+    float: left;
+
+}
+
+.logo img {
+    margin-left: 35px;
+    margin-top: 5px;
+}
+
+.list-group {
+    width: 300px;
+    float: left;
+}
+
+.list-group a {
+	text-align: left;
+}
